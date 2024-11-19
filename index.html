@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/1f49f.svg" type="image/x-icon" />
+    <title>LEEGANGHO-CV</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f4f8;
+        color: #333;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* 반응형 레이아웃을 위해 추가 */
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px; /* 최대 너비 설정 */
+      }
+      .introduce {
+        text-align: center;
+        padding: 20px;
+        border: 0.1px solid #ccc;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .introduce img {
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #3498db;
+      }
+      .introduce h2 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .introduce p {
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .box {
+        flex: 2 1 600px; /* 반응형 크기 설정 */
+        padding: 20px;
+        border: 0.1px solid #ccc;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-height: 90vh;
+      }
+      .box h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+      .box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #3498db;
+      }
+      .box h4 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #1abc9c;
+      }
+      .box p {
+        line-height: 1.8;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .box ul {
+        padding-left: 20px;
+        margin-bottom: 10px;
+      }
+      .box ul li {
+        margin-bottom: 5px;
+        color: #444;
+      }
+      .box ul li strong {
+        color: #e74c3c;
+      }
+      .box img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .box p strong {
+        color: #f39c12;
+      }
+      .box ul li em {
+        color: #9b59b6;
+      }
+      .box ul li span {
+        color: #2ecc71;
+      }
+
+      /* 반응형 스타일 */
+      @media (min-width: 1200px) {
+        .box {
+          overflow-y: auto;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1199px) {
+        .box {
+          overflow-y: auto;
+        }
+        .introduce {
+          width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column; /* 작은 화면에서는 세로 배치 */
+          gap: 30px;
+        }
+        .introduce img {
+          width: 120px;
+          height: 120px;
+        }
+        .box {
+          max-height: none; /* 작은 화면에서는 스크롤 제한 해제 */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .introduce p,
+        .box p {
+          font-size: 14px; /* 텍스트 크기 줄이기 */
+        }
+        .introduce img {
+          width: 100px;
+          height: 100px;
+        }
+        .box {
+          max-height: none; /* 작은 화면에서는 스크롤 제한 해제 */
+        }
+        .box h2,
+        .box h3,
+        .box h4 {
+          font-size: 18px; /* 제목 크기 조정 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Introduce Section -->
+      <div class="introduce">
+        <h2>About Me</h2>
+        <img src="/KakaoTalk_20241118_165452853.jpg" alt="Profile Picture" />
+        <h2>LEEGANGHO</h2>
+        <div
+          style="width: 100%; border: 0.1px solid #ccc; margin-bottom: 25px"
+        ></div>
+        <div style="text-align: start; margin-bottom: 25px">
+          <p>🧑🏻‍💻 <strong>Web FrontEnd Developer</strong></p>
+          <p>🎭 <strong>UI/UX Designer</strong></p>
+          <p>🗣 <strong>Korean & English</strong></p>
+          <p>📍 <strong>Pocheon, Gyeonggi-do</strong></p>
+          <p>📜 <strong>Completed Elice Track IoT 3</strong></p>
+        </div>
+        <div style="width: 100%; border: 0.1px solid #ccc"></div>
+        <div style="text-align: start; margin-top: 25px">
+          <p>Mail📧 : <strong>eetd100@naver.com</strong></p>
+          <p>Phone📞 : <strong>010-5497-0058</strong></p>
+          <p>
+            GitHub🌐 :
+            <strong
+              ><a
+                href="https://github.com/chickengir1"
+                style="color: #3498db; text-decoration: none"
+                >GitHub Profile</a
+              ></strong
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="box">
+        <h1 style="margin-bottom: 35px" id="elice-store">Projects</h1>
+        <!-- 엘리스 스토어 -->
+        <h2 style="margin-bottom: 35px">1. 엘리스 스토어</h2>
+        <img src="/2024-06-07_172905.png" alt="Dashboard" />
+        <img src="/image 1.png" alt="Product Sections" />
+        <img src="/image.png" alt="Like Feature" />
+        <p>
+          지난 <strong>3월부터 9월까지</strong> KDT 주관 엘리스 트랙 부트캠프에
+          참여하며 <strong>프론트엔드 개발</strong>을 주도적으로 담당했습니다.
+          UI/UX 설계부터 실제 기능 구현, 그리고 서버 배포 작업까지 다방면에서
+          기여하며 팀 프로젝트의 성공을 이끌었습니다.
+        </p>
+        <h3>직관적이고 사용성을 강조한 UI/UX 설계</h3>
+        <ul>
+          <li>
+            <strong>깔끔한 레이아웃:</strong> 유저 정보, 내비게이션 메뉴, 상품
+            목록을 명확히 구분하여 가독성 향상.
+          </li>
+          <li>
+            <strong>직관적 인터페이스:</strong> 상품 삭제, 총 금액 확인, 쇼핑
+            진행 등 주요 기능을 쉽게 파악하도록 구성.
+          </li>
+          <li>
+            <strong>반응형 디자인:</strong> 다양한 기기 환경에서 일관된 사용자
+            경험 제공.
+          </li>
+          <li>
+            <strong>효율성 강화:</strong> 최소한의 클릭으로 작업 완료가
+            가능하도록 워크플로우 설계.
+          </li>
+        </ul>
+        <h3>배송 관리 UI 설계 및 구현</h3>
+        <ul>
+          <li>
+            <strong>배송 상태 시각화:</strong> 주문 상태(배송 중, 배송 완료)를
+            명확히 구분하여 사용자가 빠르게 파악 가능.
+          </li>
+          <li>
+            <strong>상품 정보 표시:</strong> 주문 날짜, 제품명, 사이즈, 색상 등
+            정보를 카드 형태로 구성.
+          </li>
+          <li>
+            <strong>액션 버튼 제공:</strong> "주문 취소", "주문 수정" 버튼으로
+            빠른 요청 처리 가능.
+          </li>
+        </ul>
+        <h3>상품 관리 대시보드 UI 설계 및 구현</h3>
+        <ul style="margin-bottom: 35px">
+          <li>
+            <strong>종합 정보 제공:</strong> 브랜드 수와 재고 수를 강조하여
+            한눈에 확인 가능.
+          </li>
+          <li>
+            <strong>상품 목록 관리:</strong> 상품 이미지, 이름, 가격 등 정보를
+            표 형태로 제공.
+          </li>
+          <li>
+            <strong>직관적인 수정/삭제 기능:</strong> 각 상품별 수정 및 삭제
+            버튼 제공.
+          </li>
+          <li>
+            <strong>상품 추가 기능:</strong> 새 상품을 간편히 등록할 수 있는
+            기능 추가.
+          </li>
+        </ul>
+        <div
+          style="width: 100%; border: 0.1px solid #ccc; margin-bottom: 85px"
+        ></div>
+
+        <!-- 모바일 UI 디자인 -->
+        <h2 style="margin-bottom: 35px" id="mobile-ui">2. 모바일 UI 디자인</h2>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+            width: 45%;
+          "
+        >
+          <img src="/image 3.png" alt="Dashboard" class="half" />
+          <img src="/image 2.png" alt="Dashboard" class="half" />
+        </div>
+        <p>
+          최근 진행한 개인 프로젝트에서 <strong>메인 페이지</strong>와
+          <strong>예약 관리 페이지</strong>의 모바일 UI 설계 및 구현을
+          주도적으로 담당했습니다. 사용자 중심의 설계로 주요 기능 접근성을
+          개선하고, 효율적인 UI를 제공했습니다.
+        </p>
+        <h3>예약 관리 모바일 UI 설계 및 구현</h3>
+        <ul>
+          <li>
+            <strong>날짜별 예약 정리:</strong> 사용자가 원하는 정보를 쉽게 찾을
+            수 있도록 예약 목록을 날짜별로 정리.
+          </li>
+          <li>
+            <strong>상세 예약 정보 표시:</strong> 가게 이름, 위치, 예약 시간 등
+            정보를 카드 형태로 구성.
+          </li>
+          <li>
+            <strong>유저 액션 버튼 제공:</strong> "리뷰 쓰기" 버튼으로 예약 후
+            피드백 작성 가능.
+          </li>
+        </ul>
+        <h3>메인 페이지 모바일 UI 설계 및 구현</h3>
+        <ul style="margin-bottom: 35px">
+          <li>
+            <strong>추천 섹션 구성:</strong> 사용자 선호에 맞춘 추천 장소를 카드
+            형태로 제공.
+          </li>
+          <li>
+            <strong>카테고리별 분류:</strong> 인기 장소, 이전 방문 장소 등으로
+            분류하여 탐색 편의성 강화.
+          </li>
+          <li>
+            <strong>장소 상세 정보 표시:</strong> 가게 이름, 위치, 키워드 등을
+            명확히 제공하여 탐색 효율성 향상.
+          </li>
+        </ul>
+        <div
+          style="width: 100%; border: 0.1px solid #ccc; margin-bottom: 85px"
+        ></div>
+
+        <!-- 기술 스택 -->
+        <h4 id="tech-stack">기술 스택</h4>
+        <p>
+          <strong style="color: #3178c6">TypeScript</strong>,
+          <strong style="color: #61dafb">React</strong>,
+          <strong style="color: #38b2ac">Tailwind CSS</strong>,
+          <strong style="color: #a259ff">Figma</strong>,
+          <strong style="color: #31a8ff">Photoshop</strong>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
